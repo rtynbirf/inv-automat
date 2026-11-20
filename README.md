@@ -1,3 +1,19 @@
+<div align="center">
+
+<a href="https://github.com/rtynbirf/inv-automat"><img src="banner.png" width="100%" alt="inv-automat — штандарт мастерской в каноне ORNAMENTAL MYTHO-REALISM"></a>
+
+</div>
+
+<!--ФОРЖ:ПАСПОРТ:НАЧАЛО-->
+<div align="center">
+  <img src="revo-page.svg" width="100%" alt="РЕВО-паспорт страницы inv-automat в каноне ORNAMENTAL MYTHO-REALISM: орнаментальная решётка, медальон-миф, строение файлов, лексикон — по фактическому контенту" />
+</div>
+
+| ФАЙЛОВ | ПАПОК | КОММИТОВ | ОБНОВЛЕНО | РЕЛИЗОВ |
+|---:|---:|---:|---|---:|
+| 10 | 4 | 17 | 2026-11-20 | 0 |
+<!--ФОРЖ:ПАСПОРТ:КОНЕЦ-->
+
 # inv-automat — КОНЕЧНЫЙ АВТОМАТ инвентаризации
 
 МЕХАНИЗМ inv-01 переведён в конечный автомат и встроен в геном роя.
