@@ -74,7 +74,7 @@ class Automat:
         self.run_id = "R" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
         self.ledger_path = os.path.join(repo_dir, "automat/ledger/runs.jsonl")
         self.state_path = os.path.join(repo_dir, "automat/state.json")
-        self.report_path = os.path.join(repo_dir, "report/index.html")
+        self.report_path = os.path.join(repo_dir, "docs/index.html")
         self.c = {}          # контекст между состояниями
         self.degraded_from = None
         self.steps = 0
