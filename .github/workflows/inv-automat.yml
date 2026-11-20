@@ -1,0 +1,26 @@
+name: INV-AUTOMAT — конечный автомат инвентаризации
+on:
+  schedule:
+    - cron: "23 3 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  automat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: ПРОВОДКА АВТОМАТА (FSM: IDLE→BOOT→INVENTORY→CLAIMS→VERIFY→LEDGER→REPORT→PUBLISH)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 automat/inv_automat.py --user rtynbirf --repo-dir .
+      - name: Коммит свидетельств (append-only ledger + отчёт)
+        run: |
+          git config user.name "inv-automat[bot]"
+          git config user.email "inv-automat@users.noreply.github.com"
+          git add automat/ledger automat/state.json report || true
+          git commit -m "inv-automat: прогон $(date -u '+%F %T') — свидетельства в ledger" || echo "нет изменений"
+          git push
