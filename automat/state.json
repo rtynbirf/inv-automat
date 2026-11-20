@@ -1,1 +1,74 @@
-{"state": "IDLE", "history": []}
+{
+ "state": "DONE",
+ "history": [
+  {
+   "ts": "2026-11-20T18:34:18Z",
+   "from": "IDLE",
+   "guard": "start",
+   "to": "BOOT"
+  },
+  {
+   "ts": "2026-11-20T18:34:18Z",
+   "from": "BOOT",
+   "guard": "ok",
+   "to": "INVENTORY"
+  },
+  {
+   "ts": "2026-11-20T18:34:30Z",
+   "from": "INVENTORY",
+   "guard": "ok",
+   "to": "CLAIMS"
+  },
+  {
+   "ts": "2026-11-20T18:34:49Z",
+   "from": "CLAIMS",
+   "guard": "ok",
+   "to": "VERIFY"
+  },
+  {
+   "ts": "2026-11-20T18:34:50Z",
+   "from": "VERIFY",
+   "guard": "ok",
+   "to": "LEDGER"
+  },
+  {
+   "ts": "2026-11-20T18:34:50Z",
+   "from": "LEDGER",
+   "guard": "ok",
+   "to": "REPORT"
+  },
+  {
+   "ts": "2026-11-20T18:34:50Z",
+   "from": "REPORT",
+   "guard": "ok",
+   "to": "PUBLISH"
+  },
+  {
+   "ts": "2026-11-20T18:34:50Z",
+   "from": "PUBLISH",
+   "guard": "ok",
+   "to": "DONE"
+  }
+ ],
+ "run_id": "R20261120T183418Z",
+ "updated": "2026-11-20T18:34:50Z",
+ "last_summary": {
+  "run_id": "R20261120T183418Z",
+  "ts": "2026-11-20T18:34:50Z",
+  "repos": 80,
+  "commits_sum_clones": 9789,
+  "commits_author_search": 6113,
+  "claims": 196,
+  "claims_pass": 13,
+  "claims_fail": 20,
+  "contradictions": 30,
+  "degraded_from": null,
+  "delta_vs_prev": {
+   "repos": null,
+   "commits_sum_clones": null,
+   "claims": null,
+   "claims_fail": null,
+   "contradictions": null
+  }
+ }
+}
