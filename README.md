@@ -4,6 +4,14 @@
 
 </div>
 
+<!--ФОРЖ:МУЗА:НАЧАЛО-->
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/inv-automat@main/repo-muse.svg" width="100%" alt="Муза inv-automat: мастерская КУЗНЯ ПОЛИМАТ, кузня ПОЛИМАТ, раунд 12 · REVE=РЕВО" />
+  <br/>
+  <img src="https://cdn.jsdelivr.net/gh/rtynbirf/inv-automat@main/forge-divider.svg" width="62%" alt="делитель мастерской КУЗНЯ ПОЛИМАТ" />
+</div>
+<!--ФОРЖ:МУЗА:КОНЕЦ-->
+
 <!--ФОРЖ:ПАСПОРТ:НАЧАЛО-->
 <div align="center">
   <img src="revo-page.svg" width="100%" alt="РЕВО-паспорт страницы inv-automat в каноне ORNAMENTAL MYTHO-REALISM: орнаментальная решётка, медальон-миф, строение файлов, лексикон — по фактическому контенту" />
@@ -11,8 +19,20 @@
 
 | ФАЙЛОВ | ПАПОК | КОММИТОВ | ОБНОВЛЕНО | РЕЛИЗОВ |
 |---:|---:|---:|---|---:|
-| 28 | 7 | 65 | 2026-11-28 | 0 |
+| 28 | 7 | 1 | 2026-11-28 | 0 |
 <!--ФОРЖ:ПАСПОРТ:КОНЕЦ-->
+
+# inv-automat
+
+<p align="center"><img src="https://cdn.jsdelivr.net/gh/rtynbirf/inv-automat@main/.github/social-preview.png" alt="inv-automat" width="100%"></p>
+
+<div align="center">
+
+<a href="https://github.com/rtynbirf/inv-automat"><img src="banner.png" width="100%" alt="inv-automat — штандарт мастерской в каноне ORNAMENTAL MYTHO-REALISM"></a>
+
+</div>
+
+
 
 # inv-automat — КОНЕЧНЫЙ АВТОМАТ инвентаризации
 
@@ -71,3 +91,5 @@ append-only `INV_LEDGER.jsonl`), разнесённый cron-такт по хэ�
 - DEGRADED — не ошибка, а честная метка частичного прогона
 - UNVERIFIABLE — в GitHub API факта нет (нужен CI-прогон), не «не проверено потому что лень»
 - search-индекс может отставать от реальности на минуты; это помечено в отчёте
+
+<!--ФОРЖ:ПОДВАЛ-->
